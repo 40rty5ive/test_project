@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакти</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        header {
+            background-color: #0078d7;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            margin-bottom: 10px;
+        }
+        form {
+            margin-top: 20px;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        button {
+            margin-top: 15px;
+            padding: 10px 20px;
+            background-color: #0078d7;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #005bb5;
+        }
+        .contact-info {
+            margin-top: 20px;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Зв'яжіться з нами</h1>
+</header>
+
+<div class="container">
+    <h2>Напишіть нам</h2>
+    <p>Будь ласка, заповніть форму нижче, і ми зв'яжемося з вами найближчим часом.</p>
+    <form action="/submit-contact-form" method="post">
+        <label for="name">Ваше ім'я</label>
+        <input type="text" id="name" name="name" placeholder="Введіть ваше ім'я" required>
+
+        <label for="email">Електронна пошта</label>
+        <input type="email" id="email" name="email" placeholder="Введіть вашу електронну пошту" required>
+
+        <label for="message">Повідомлення</label>
+        <textarea id="message" name="message" rows="5" placeholder="Напишіть ваше повідомлення" required></textarea>
+
+        <button type="submit">Відправити</button>
+    </form>
+
+    <div class="contact-info">
+        <h2>Контактна інформація</h2>
+        <p><strong>Адреса:</strong> вул. Головна, 123, м. Київ, Україна</p>
+        <p><strong>Телефон:</strong> +380 (44) 123-45-67</p>
+        <p><strong>Email:</strong> contact@example.com</p>
+    </div>
+</div>
+
+</body>
+</html>
